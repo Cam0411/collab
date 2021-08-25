@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collab</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reponsive.css">
+</head>
+<body>
+    <div id="header">
+        <div class="img-header"> 
+        <img src="logo.png">
+    </div>
+     <ul id="nav">
+         <li><a href="">Products</a></li>
+         <li><a href="">UsersCases</a></li>
+         <li><a href="">Developers</a></li>
+         <li><a href="">Pricing</a></li>
+     </ul>
+      <ul id="sub-nav">
+          <li><a href="">Sign in</a></li>
+          <li class="sub-li"><a href="">Try for free</a></li>
+      </ul>
+      <!-- tablet and moblie -->
+      <div class="nav-menu">
+        <i class="menu fas fa-bars"></i>
+      </div>
+    </div>
+    <div id="slider">
+         <div class="slider-text">
+             <div class="text-all">
+               <h1 class="first-heading"> TOP BUSINESS APP </h1>
+               <h2 class="sec-heading">The plaform for <br> better cooperation </h2>
+               <p class="about">Crafted with care & creativity. Brings together
+               <br> everthing in one place.</p>
+                <ul id="nav-box">
+                    <li> <i class="fas fa-download"></i> download</li>
+                    <li id="sub-nav-box" > <i class="fab fa-google-play"></i> check demo</li>
+                </ul>
+             </div>
+             <img src="hero-header.gif">
+         </div>
+    </div>
+    <div id="content">
+            <div class="text-content">
+                <ul id="nav-content">
+                    <li> <img src="netflix.png">      </li>
+                    <li> <img src="facebook.png">  </li>
+                    <li><img src="freelancer.png">  </li>
+                    <li><img src="mailbluster.png">  </li>
+                    <li><img src="theme-wagon.png">  </li>
+                </ul>
+            </div>
+    </div>
+    <div id="content-2">
+        <div class="content-2-text">
+            <img src="partnership.png">
+            <div class="all-text-2">
+                <h1 class="first-heading-2"> PARTNERSHIP </h1>
+                <h2 class="sec-heading-2"> Build strong partnership & <br> organizations </h2>
+                <p class="about-2">  Bring all your document under one place and make it easy to share with other in no time. That makes the whole process comfortable.   </p>
+                 <p class="box-2">Learn More</p>
+            </div>
+        </div>
+    </div>
+    <div id="content-3">
+        
+    </div>
+    <div id="footer">
+      
+    </div>
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-close">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="nav-all"> 
+            <ul id="nav-modal">
+                <li><a href="">Products</a></li>
+                <li><a href="">UsersCases</a></li>
+                <li><a href="">Developers</a></li>
+                <li><a href="">Pricing</a></li>
+            </ul>
+             <ul id="sub-nav-modal">
+                 <li><a href="">Sign in</a></li>
+                 <li class="sub-li"><a href="">Try for free</a></li>
+             </ul>
+            </div>
+        </div>
+    </div>
+    <div class="to-top"><a href="#slider"> <i class="fas fa-chevron-up"></i> </a></div>
+    <script>
+    const menus = document.querySelectorAll('.menu')
+    const modal = document.querySelector('.modal')
+    const modalClose = document.querySelector('.modal-close')
+    function showModal(){
+        modal.classList.add('open')
+    }
+    function hideModal(){
+        modal.classList.remove('open')
+    }
+    for (const menu of menus ){
+        menu.addEventListener('click',showModal)
+    }
+         modalClose.addEventListener('click',hideModal)
+    </script>
+    <script>
+        const toTop = document.querySelector('.to-top')
+        window.addEventListener('scroll',() => {
+            if (window.pageYOffset > 100){
+                toTop.classList.add('active')
+            }else
+            {
+                toTop.classList.remove('active')
+            }
+        })
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+</body>
+</html>
