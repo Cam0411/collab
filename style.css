@@ -411,11 +411,11 @@ li#sub-nav-box
 }
 #content-6 
 {
-    height: 500px;
+    height: 600px;
 }
 .content-6-text 
 {
-    height: 400px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -424,7 +424,7 @@ li#sub-nav-box
 .content-6-box 
 {
     display: flex;
-    width: 500px;
+    width: 600px;
     padding: 10px;
 }
 .content-6-box img 
