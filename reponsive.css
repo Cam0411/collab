@@ -59,7 +59,7 @@
 }
 #content-2 
 {
-    height: 1100px;
+    height: 1200px;
 
 }
 .content-2-text 
@@ -67,7 +67,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1000px;
+    height: 1100px;
     flex-direction: column;
 }
 .content-2-text img 
