@@ -244,7 +244,7 @@
 .collapsible {
    margin-left: 0%;
    font-size: 17px;
-   width: 110%;
+   width: 100%;
   }
   
   .content {
@@ -252,8 +252,71 @@
    font-size: 16px;
    width: 100%;
   }
+  .content-9-text img
+  {
+      display: none;
+  }
+  #content-9 
+  {
+      height: 500px;
+      background-image: url('cta-2-bg.png');
+      padding-top: 5%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .content-9-text
+  {
+      height: 400px;
+      bottom: 0%;
+      position: absolute;
+      display: flex;
+      margin-left: 50px;
+  } 
+  .heading-9 
+{
+    font-size: 20px;
+    line-height: 32px;
 }
-@media (min-width:651px) and (max-width:1010px){
+.content-8-text i 
+{
+    display: none;
+}
+.footer-text 
+{
+    flex-direction: column;
+}
+.text 
+{
+     width: 100%;
+     padding: 20px;
+     margin-bottom: 20px;
+}
+.text-2
+{
+    width: 100%;
+    font-size: 25px;
+}
+.send-box 
+{
+    padding: 20px;
+}
+#footer 
+{
+    height: 400px;
+}
+.footer-text 
+{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+}
+@media (min-width:651px) and (max-width:1010px) {
     #nav 
     {
         display: none;
@@ -432,10 +495,26 @@
 .collapsible {
    margin-left: 0%;
    font-size: 17px;
+   width: 85%;
   }
   
   .content {
    margin-left: 0;
    font-size: 16px;
+   width: 85%;
   }
+  .heading-9 
+{
+    font-size: 20px;
+    line-height: 28px;
 }
+#nav-9 li 
+{
+    margin-top: 20px;
+}
+.footer-text 
+{
+    flex-direction: column;
+}
+}
+
