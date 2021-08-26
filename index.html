@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>collab</title>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reponsive.css">
@@ -137,7 +138,7 @@
                     CEO, FrankPhoto</p>
               </div>
             </div>
-            <br>
+          
             <div class="content-6-box">
                 <img src="testimonial-3.png">
                 <div class="text-box-6"> 
@@ -158,11 +159,44 @@
         </div>
     </div>
     <div id="content-7">
-
+       <div class="content-7-text">
+           <img src="cta.png">
+           <div class="all-text-7">
+               <h1 class="heading-7">Collaborate with the <br>
+                team free of cost</h1>
+                <p class="box-7">Try For free</p>
+           </div>
+       </div>
     </div>
-    <div id="footer">
-      
-    </div>
+        <div id="content-8">
+            <div class="content-8-text">
+                <div class="all-text-8">
+                    <h1 class="heading-8"> Frequently asked questions  </h1>
+                    <button type="button" class="collapsible"> Who should use the app? </button>
+                    <div class="content">
+                      <p>All our users like the amazing features and illustration of our app and it effective working procedure.</p>
+                    </div>
+                    <button type="button" class="collapsible">What is the working procedure of the app?</button>
+                    <div class="content">
+                      <p>
+                        You can issue either partial or full refunds. There are no fees to refund a charge, but the fees from the original charge are not returned.</p>
+                    </div>
+                    <button type="button" class="collapsible">How is the app helpful?                    </button>
+                    <div class="content">
+                      <p>Disputed payments (also known as chargebacks) incur a $15.00 fee. If the customer’s bank resolves the dispute in your favor, the fee is fully refunded.</p>
+                    </div>
+                    <button type="button" class="collapsible">Is the app workable while you got no internet?  </button>
+                    <div class="content">
+                      <p>There are no additional fees for using our mobile SDKs or to accept payments using consumer wallets like Apple Pay or Google Pay.</p>
+                    </div>
+                    <button type="button" class="collapsible">What are the security measure of the app?
+                    </button>
+                    <div class="content">
+                      <p>There are no additional fees for using our mobile SDKs or to accept payments using consumer wallets like Apple Pay or Google Pay.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     <div class="modal">
         <div class="modal-content">
             <div class="modal-close">
@@ -236,5 +270,21 @@
       });
     });
     </script>
+      <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
 </body>
 </html>
